@@ -17,10 +17,10 @@ export default function StaticInfo() {
           <Animation />
           <div className="main-profile">
             <img className="avatar" src={me} alt="avatar photo" />
-            <button>
+            <a href="https://github.com/DonRicardoG" target="_blank">
               Follow
               <img src={gitLogo} alt="git logo" />
-            </button>
+            </a>
           </div>
         </div>
       </main>

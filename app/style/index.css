@@ -124,7 +124,7 @@ header button {
   }
 }
 
-.main-profile button {
+.main-profile a {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -139,9 +139,10 @@ header button {
   padding: 0.5rem;
   transition: 0.2s background-color ease;
   border: 3px solid transparent;
+  text-decoration: none;
 }
 
-.main-profile button:hover {
+.main-profile a:hover {
   cursor: pointer;
   background-color: var(--dark-violet);
   border: 3px solid var(--dark-blue);
