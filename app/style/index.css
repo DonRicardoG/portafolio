@@ -477,6 +477,7 @@ header button {
   transform-style: preserve-3d;
   transform: perspective(250px) rotateX(var(--yAngle, 0deg))
     rotateY(var(--xAngle, 0deg));
+  will-change: transform;
 }
 
 .eye {

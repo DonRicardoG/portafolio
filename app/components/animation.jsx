@@ -39,6 +39,7 @@ const Animation = () => {
           "--yAngle",
           containerYAngle.toFixed(2) + "deg"
         );
+        console.log("hola");
       });
     }
   }
