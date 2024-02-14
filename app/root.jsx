@@ -13,14 +13,6 @@ import Header from "./components/header";
 import Footer from "./components/footer";
 import StaticInfo from "./components/staticInfo";
 
-export function meta() {
-  return [
-    { charset: "utf-8" },
-    { title: "RicardoGmz" },
-    { viewport: "width-device-width, initial-scale=1" },
-  ];
-}
-
 export const links = () => {
   return [
     {
@@ -59,7 +51,8 @@ function Document({ children }) {
   return (
     <html lang="es">
       <head>
-        <Meta />
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
         <Links />
       </head>
       <body>
