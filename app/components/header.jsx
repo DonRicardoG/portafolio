@@ -13,6 +13,21 @@ const Header = () => {
       setDarkMode(false);
     }
   };
+
+  if (typeof document === "undefined") {
+  } else {
+    let body = document.querySelector("body");
+
+    console.log(body.classList);
+
+    if (darkMode === false) {
+      body.classList.remove("darkMode");
+    }
+
+    if (darkMode === true) {
+      body.classList.add("darkMode");
+    }
+  }
   return (
     <>
       <header>

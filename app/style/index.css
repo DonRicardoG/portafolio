@@ -9,6 +9,21 @@
   --dark-blue: #101c61ff;
   --lighter-blue: #b9dfefff;
   --main-font: "Roboto", sans-serif;
+  --black: #011f3b;
+}
+
+.darkMode {
+  --purple: #bfa9e6ff;
+  --gray: rgb(152, 154, 161);
+  --light-blue: rgb(52, 56, 61);
+  --light-blue-c: hsla(200, 8%, 7%, 0.5);
+  --white: #fcfdfeff;
+  --whiteBG: rgb(92, 92, 92);
+  --violet: #036bd4;
+  --dark-violet: #207bd1;
+  --dark-blue: rgb(150, 150, 150);
+  --lighter-blue: #b9dfefff;
+  --black: #909598;
 }
 
 html {
@@ -26,6 +41,7 @@ body {
   font-size: 2rem;
   font-family: var(--main-font);
   line-height: 1.5;
+  background-color: var(--whiteBG);
 }
 img {
   max-width: 100%;
@@ -58,6 +74,7 @@ header button {
   display: flex;
   flex-direction: column;
   width: 100%;
+  background-color: var(--white);
 }
 
 @media (min-width: 640px) {
@@ -183,6 +200,7 @@ header button {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
+  color: var(--black);
 }
 
 @media (min-width: 640px) {
@@ -197,6 +215,7 @@ header button {
   margin: 0;
   font-size: 16px;
   font-weight: 400;
+  color: var(--black);
 }
 
 @media (min-width: 640px) {
@@ -339,7 +358,7 @@ header button {
 }
 
 .avatar-title p {
-  color: var(--dark-blue);
+  color: var(--black);
   margin: 0;
 }
 
@@ -388,6 +407,7 @@ header button {
 
 .feed-post-content p {
   font-size: 14px;
+  color: var(--black);
 }
 
 .footer-container {
