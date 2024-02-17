@@ -6,10 +6,7 @@ const NavLinks = () => {
   return (
     <ul className="nav-links">
       <li>
-        <a
-          href="https://docs.google.com/document/d/e/2PACX-1vTig6xcIPeQ8uq0CsHuE_5GIPu5bmABYQqNjte8tgtDTVKaYHX5-r4eW0XaRazxR3Av3xFpHTr2c7eW/pub"
-          target="_blank"
-        >
+        <a href="https://jade-cassondra-88.tiiny.site/" target="_blank">
           <img src={caseLogo} alt="case logo" />
           Available
         </a>
