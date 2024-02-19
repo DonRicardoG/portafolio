@@ -2,6 +2,7 @@ import logo from "../../public/img/logoR.png";
 import sunLogo from "../../public/img/sun.svg";
 import moonLogo from "../../public/img/moon.svg";
 import { useState } from "react";
+import { Link } from "@remix-run/react";
 
 const Header = () => {
   const [darkMode, setDarkMode] = useState(false);
@@ -31,7 +32,10 @@ const Header = () => {
   return (
     <>
       <header>
-        <img src={logo} alt="logo" />
+        <Link to="/">
+          <img src={logo} alt="logo" />
+        </Link>
+
         <button>
           <img
             src={!darkMode ? sunLogo : moonLogo}

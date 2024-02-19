@@ -248,6 +248,7 @@ header button {
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--dark-blue);
 }
 
 .nav-links li a {
@@ -259,7 +260,7 @@ header button {
 }
 
 #link {
-  color: var(--violet);
+  color: var(--dark-blue);
 }
 
 .navigation {
