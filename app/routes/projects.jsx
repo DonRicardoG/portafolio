@@ -2,6 +2,7 @@ import { useLoaderData } from "@remix-run/react";
 import { getAllProjects } from "../models/projects.server";
 import style from "../style/projects.css";
 import images from "../images/index";
+import Loader from "../components/loader";
 
 export function meta() {
   return [
@@ -28,8 +29,6 @@ export function links() {
 const Projects = () => {
   const projects = useLoaderData().data;
 
-  console.log(images.reactjs);
-
   return (
     <main className="second-container">
       {projects.map((project) => (
@@ -39,11 +38,16 @@ const Projects = () => {
           key={project.id}
           className="project-card"
         >
-          <img
-            src={project.attributes.image.data.attributes.url}
-            alt={`Project image ${project.attributes.ProjectName}`}
-            className="project-image"
-          />
+          {!project.attributes.image.data.attributes.url ? (
+            <Loader />
+          ) : (
+            <img
+              src={project.attributes.image.data.attributes.url}
+              alt={`Project image ${project.attributes.ProjectName}`}
+              className="project-image"
+            />
+          )}
+
           <h1>{project.attributes.ProjectName}</h1>
           <p>{`${project.attributes.ProjectName.toLowerCase()
             .split(" ")
